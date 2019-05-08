@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>empty password</name>
+   <name>enter username</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ecd685b5-92a6-4b3c-8464-c7f10cc2f6cb</testCaseGuid>
+   <testCaseGuid>002e6ccd-25ff-4285-b27d-f63767f5bdda</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>7891a17d-a2a0-4e76-acc0-1f2bf079dda7</id>
+      <id>fe6b5c93-1161-4f11-90bc-66dfb201c5b7</id>
       <masked>false</masked>
-      <name>password_1</name>
+      <name>username_1</name>
    </variable>
 </TestCaseEntity>

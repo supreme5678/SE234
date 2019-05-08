@@ -27,7 +27,7 @@ WebUI.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/show cart/Page_ProjectBackend/button_add to cart'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/show cart/Page_ProjectBackend/div_already added'), 'already added')
+WebUI.verifyElementPresent(findTestObject('Object Repository/show cart/Page_ProjectBackend/div_already added'), 0)
 
 WebUI.verifyElementText(findTestObject('Object Repository/show cart/Page_ProjectBackend/span_1'), '1')
 

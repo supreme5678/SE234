@@ -13,6 +13,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
@@ -29,6 +33,22 @@ WebUI.delay(20, FailureHandling.STOP_ON_FAILURE)
 WebUI.verifyElementPresent(findTestObject('user login/Page_ProjectBackend/a_Products'), 0)
 
 WebUI.verifyElementPresent(findTestObject('user login/Page_ProjectBackend/a_Carts'), 0)
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+'To locate table'
+WebElement Table = driver.findElement(By.xpath('//*[@id="navbarSupportedContent"]'))
+
+'To locate rows of table it will Capture all the rows available in the table'
+List<WebElement> col = Table.findElements(By.className('nav-item'))
+int counter = 0;
+for (int i = 1; i <= col.size(); i++) {
+	counter++;
+}
+println('No. of columns' + counter)
+'compare the value'
+WebUI.verifyEqual(2, col.size())
+
 
 WebUI.closeBrowser()
 

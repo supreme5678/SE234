@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>user calculation test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e63dbffe-cf71-4ef9-9cd8-35f968734fff</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>feb83c0d-399b-4024-a94d-790bccbc2656</id>
+      <masked>false</masked>
+      <name>username_1</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0da92183-4217-4836-99e2-133c12ecef31</id>
+      <masked>false</masked>
+      <name>password_1</name>
+   </variable>
+</TestCaseEntity>

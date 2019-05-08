@@ -1,0 +1,31 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login test,Chrome 74.0.3729.131,,,2019-05-07 04:54:29,2019-05-07 04:56:56,2m - 27.706s,FAILED
+,,,,,,,
+Test Cases/admin login,Chrome 74.0.3729.131,,,2019-05-07 04:54:29,2019-05-07 04:55:03,34.085s,FAILED
+"openBrowser("""")",Chrome 74.0.3729.131,,,2019-05-07 04:54:29,2019-05-07 04:54:32,3.235s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Chrome 74.0.3729.131,,,2019-05-07 04:54:32,2019-05-07 04:54:42,9.840s,PASSED
+"setText(findTestObject(""admin login/Page_ProjectBackend/input_Username""), username_2)",Chrome 74.0.3729.131,,,2019-05-07 04:54:42,2019-05-07 04:54:42,0.138s,PASSED
+"setText(findTestObject(""admin login/Page_ProjectBackend/input_Password""), password_2)",Chrome 74.0.3729.131,,,2019-05-07 04:54:42,2019-05-07 04:54:42,0.095s,PASSED
+"click(findTestObject(""Object Repository/user login/Page_ProjectBackend/button_Login""))",Chrome 74.0.3729.131,,,2019-05-07 04:54:42,2019-05-07 04:54:42,0.076s,PASSED
+delay(20),Chrome 74.0.3729.131,,,2019-05-07 04:54:42,2019-05-07 04:55:02,20.016s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/user login/Page_ProjectBackend/a_Products""), 0)",Chrome 74.0.3729.131,,,2019-05-07 04:55:02,2019-05-07 04:55:02,0.028s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/user login/Page_ProjectBackend/a_Total Transaction""), 0)",Chrome 74.0.3729.131,,,2019-05-07 04:55:02,2019-05-07 04:55:03,0.388s,FAILED
+,,,,,,,
+Test Cases/login fail,Chrome 74.0.3729.131,,,2019-05-07 04:55:03,2019-05-07 04:55:48,45.506s,FAILED
+"System.setProperty(""webdriver.chrome.driver"", ""C:\chromedriver.exe"")",Chrome 74.0.3729.131,,,2019-05-07 04:55:03,2019-05-07 04:55:03,0.002s,PASSED
+"openBrowser("""")",Chrome 74.0.3729.131,,,2019-05-07 04:55:03,2019-05-07 04:55:06,2.718s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Chrome 74.0.3729.131,,,2019-05-07 04:55:06,2019-05-07 04:55:17,11.685s,PASSED
+"setText(findTestObject(""Object Repository/login fail/Page_ProjectBackend/input_Username_username""), username_fail)",Chrome 74.0.3729.131,,,2019-05-07 04:55:17,2019-05-07 04:55:18,0.094s,PASSED
+"setText(findTestObject(""Object Repository/login fail/Page_ProjectBackend/input_Password_password""), password_fail)",Chrome 74.0.3729.131,,,2019-05-07 04:55:18,2019-05-07 04:55:18,0.082s,PASSED
+"click(findTestObject(""Object Repository/login fail/Page_ProjectBackend/button_Login""))",Chrome 74.0.3729.131,,,2019-05-07 04:55:18,2019-05-07 04:55:18,0.067s,PASSED
+"waitForElementNotPresent(findTestObject(""login fail/Page_ProjectBackend/div_Usernamepassword is incorrect""), 30)",Chrome 74.0.3729.131,,,2019-05-07 04:55:18,2019-05-07 04:55:48,30.112s,PASSED
+"verifyElementText(findTestObject(""Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect""), ""Username/password is incorrect"")",Chrome 74.0.3729.131,,,2019-05-07 04:55:48,2019-05-07 04:55:48,0.573s,FAILED
+,,,,,,,
+Test Cases/logout,Chrome 74.0.3729.131,,,2019-05-07 04:55:48,2019-05-07 04:56:56,1m - 7.293s,FAILED
+"openBrowser("""")",Chrome 74.0.3729.131,,,2019-05-07 04:55:49,2019-05-07 04:55:51,2.735s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Chrome 74.0.3729.131,,,2019-05-07 04:55:51,2019-05-07 04:56:05,13.350s,PASSED
+"setText(findTestObject(""Object Repository/logout/Page_ProjectBackend/input_Username_username""), username_1)",Chrome 74.0.3729.131,,,2019-05-07 04:56:05,2019-05-07 04:56:05,0.108s,PASSED
+"setText(findTestObject(""Object Repository/logout/Page_ProjectBackend/input_Password_password""), password_1)",Chrome 74.0.3729.131,,,2019-05-07 04:56:05,2019-05-07 04:56:05,0.084s,PASSED
+"click(findTestObject(""Object Repository/logout/Page_ProjectBackend/button_Login""))",Chrome 74.0.3729.131,,,2019-05-07 04:56:05,2019-05-07 04:56:05,0.075s,PASSED
+delay(20),Chrome 74.0.3729.131,,,2019-05-07 04:56:05,2019-05-07 04:56:25,20.002s,PASSED
+"click(findTestObject(""Object Repository/logout/Page_ProjectBackend/button_Logout""))",Chrome 74.0.3729.131,,,2019-05-07 04:56:25,2019-05-07 04:56:56,30.797s,FAILED

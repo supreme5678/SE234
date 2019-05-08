@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Login test" time="91" tests="2" failures="0" errors="0">
+   <testsuite name="Login test" tests="2" failures="0" errors="0" time="91" timestamp="2019-05-07 05:10:18" hostname="ton_t - DESKTOP-7KR254I" id="Test Suites/Login test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ton_t\\git\\SE234\\Reports\\Login test\\20190507_051016"/>
+         <property name="logFiles" value="C:\\Users\\ton_t\\git\\SE234\\Reports\\Login test\\20190507_051016\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="ton_t - DESKTOP-7KR254I"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Chrome 74.0.3729.131"/>
+         <property name="hostAddress" value="192.168.43.69"/>
+         <property name="sessionId" value="b7ad2d19f2be480e6db6ae9d81e59607"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/login fail" classname="Test Cases/login fail" status="PASSED">
+         <system-out><![CDATA[2019-05-07 05:10:18 - [TEST_CASE][PASSED] - Test Cases/login fail: Test Cases/login fail
+
+2019-05-07 05:10:18 - [TEST_STEP][PASSED] - System.setProperty("webdriver.chrome.driver", "C:\chromedriver.exe"): null
+
+2019-05-07 05:10:18 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-07 05:10:18 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-05-07 05:10:18 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-05-07 05:10:21 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-07 05:10:21 - [TEST_STEP][PASSED] - navigateToUrl("http://3.89.142.198:8088/"): Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-07 05:11:01 - [MESSAGE][PASSED] - Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-07 05:11:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/login fail/Page_ProjectBackend/input_Username_username"), "user"): Text 'user' is set on object 'Object Repository/login fail/Page_ProjectBackend/input_Username_username'
+
+2019-05-07 05:11:01 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/login fail/Page_ProjectBackend/input_Username_username'
+
+2019-05-07 05:11:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/login fail/Page_ProjectBackend/input_Password_password"), "ser"): Text 'ser' is set on object 'Object Repository/login fail/Page_ProjectBackend/input_Password_password'
+
+2019-05-07 05:11:01 - [MESSAGE][PASSED] - Text 'ser' is set on object 'Object Repository/login fail/Page_ProjectBackend/input_Password_password'
+
+2019-05-07 05:11:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/login fail/Page_ProjectBackend/button_Login")): Object: 'Object Repository/login fail/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-07 05:11:01 - [MESSAGE][PASSED] - Object: 'Object Repository/login fail/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-07 05:11:01 - [TEST_STEP][NOT_RUN] - waitForElementNotPresent(findTestObject("login fail/Page_ProjectBackend/div_Usernamepassword is incorrect"), 30): NOT_RUN: waitForElementNotPresent(findTestObject("login fail/Page_ProjectBackend/div_Usernamepassword is incorrect"), 30)
+
+2019-05-07 05:11:01 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotPresent(findTestObject("login fail/Page_ProjectBackend/div_Usernamepassword is incorrect"), 30)
+
+2019-05-07 05:11:01 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-05-07 05:11:11 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-05-07 05:11:11 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect"), 0): Object 'Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect' is present
+
+2019-05-07 05:11:11 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-07 05:11:11 - [MESSAGE][PASSED] - Object 'Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect' is present
+
+2019-05-07 05:11:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-07 05:11:12 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/logout" classname="Test Cases/logout" status="PASSED">
+         <system-out><![CDATA[2019-05-07 05:11:12 - [TEST_CASE][PASSED] - Test Cases/logout: Test Cases/logout
+
+2019-05-07 05:11:12 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-07 05:11:12 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-05-07 05:11:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-07 05:11:14 - [TEST_STEP][PASSED] - navigateToUrl("http://3.89.142.198:8088/"): Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-07 05:11:28 - [MESSAGE][PASSED] - Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-07 05:11:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/logout/Page_ProjectBackend/input_Username_username"), username_1): Text 'user' is set on object 'Object Repository/logout/Page_ProjectBackend/input_Username_username'
+
+2019-05-07 05:11:28 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/logout/Page_ProjectBackend/input_Username_username'
+
+2019-05-07 05:11:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/logout/Page_ProjectBackend/input_Password_password"), password_1): Text 'user' is set on object 'Object Repository/logout/Page_ProjectBackend/input_Password_password'
+
+2019-05-07 05:11:28 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/logout/Page_ProjectBackend/input_Password_password'
+
+2019-05-07 05:11:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/logout/Page_ProjectBackend/button_Login")): Object: 'Object Repository/logout/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-07 05:11:28 - [MESSAGE][PASSED] - Object: 'Object Repository/logout/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-07 05:11:28 - [TEST_STEP][PASSED] - delay(20): Delayed 20 second(s)
+
+2019-05-07 05:11:48 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2019-05-07 05:11:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/logout/Page_ProjectBackend/button_Logout")): Object: 'Object Repository/logout/Page_ProjectBackend/button_Logout' is clicked on
+
+2019-05-07 05:11:48 - [MESSAGE][PASSED] - Object: 'Object Repository/logout/Page_ProjectBackend/button_Logout' is clicked on
+
+2019-05-07 05:11:48 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/logout/Page_ProjectBackend/h2_Login"), "Login"): Actual text and expected text of test object 'Object Repository/logout/Page_ProjectBackend/h2_Login' are matched.
+
+2019-05-07 05:11:48 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/logout/Page_ProjectBackend/h2_Login' are matched.
+
+2019-05-07 05:11:48 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/logout/Page_ProjectBackend/button_Login"), 0): Object 'Object Repository/logout/Page_ProjectBackend/button_Login' is present
+
+2019-05-07 05:11:48 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-07 05:11:48 - [MESSAGE][PASSED] - Object 'Object Repository/logout/Page_ProjectBackend/button_Login' is present
+
+2019-05-07 05:11:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-07 05:11:49 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-05-07 05:10:18 - [TEST_SUITE][PASSED] - Login test: Test Cases/logout]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

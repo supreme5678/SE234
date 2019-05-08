@@ -12,6 +12,10 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
@@ -27,7 +31,7 @@ WebUI.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/show cart/Page_ProjectBackend/button_add to cart'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/show cart/Page_ProjectBackend/div_already added'), 'already added')
+WebUI.verifyElementPresent(findTestObject('Object Repository/show cart/Page_ProjectBackend/div_already added'), 0)
 
 WebUI.verifyElementText(findTestObject('Object Repository/show cart/Page_ProjectBackend/span_1'), '1')
 

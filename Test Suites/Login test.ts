@@ -68,7 +68,7 @@
       <guid>fa0e5ae3-42ef-4d1d-a04f-9ad66f38c493</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/empty username</testCaseId>
+      <testCaseId>Test Cases/enter username</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>e23d789b-7e9e-45a6-9ec7-eed0f54da10e</id>
@@ -82,14 +82,14 @@
          <testDataLinkId>e23d789b-7e9e-45a6-9ec7-eed0f54da10e</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>username_1</value>
-         <variableId>fbb98815-ff2a-4ec8-918e-d6d69dbde77d</variableId>
+         <variableId>fe6b5c93-1161-4f11-90bc-66dfb201c5b7</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>b41e78bd-a265-4194-b8a0-730c533ccaf5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/empty password</testCaseId>
+      <testCaseId>Test Cases/enter password</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>2f4a78cc-6842-4c4d-b33d-36cbdc0ac1a9</id>

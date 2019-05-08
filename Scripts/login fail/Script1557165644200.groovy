@@ -12,6 +12,10 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By as By
 
 System.setProperty('webdriver.chrome.driver', 'C:\\chromedriver.exe')
 
@@ -25,13 +29,26 @@ WebUI.setText(findTestObject('Object Repository/login fail/Page_ProjectBackend/i
 
 WebUI.click(findTestObject('Object Repository/login fail/Page_ProjectBackend/button_Login'))
 
-not_run: WebUI.waitForElementNotPresent(findTestObject('login fail/Page_ProjectBackend/div_Usernamepassword is incorrect'), 
-    30)
-
-WebUI.delay(10)
+not_run: WebUI.delay(10)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect'), 
     0)
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+WebElement Table = driver.findElement(By.tagName('app-login'))
+
+List<WebElement> word = Table.findElements(By.className('text-danger'))
+
+int counter = 0
+
+for (int i = 0; i <= word.size(); i++) {
+    counter++
+}
+
+println('No. of warning' + counter)
+
+WebUI.verifyEqual(1, counter)
 
 WebUI.closeBrowser()
 

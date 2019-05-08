@@ -12,6 +12,10 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
@@ -44,6 +48,24 @@ WebUI.click(findTestObject('Object Repository/user calculation/Page_ProjectBacke
 WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('user calculation/Page_ProjectBackend/div_successfully_added'), 0)
+
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+WebElement Table = driver.findElement(By.xpath('//*[@id="add-row"]'))
+
+List<WebElement> price = Table.findElements(By.tagName('tbody'))
+int counter = 0
+
+for (int i = 1; i <= price.size(); i++) {
+	counter++
+}
+
+println('No. of row ' + counter)
+
+WebUI.verifyEqual(1, counter)
+
+
 
 WebUI.closeBrowser()
 

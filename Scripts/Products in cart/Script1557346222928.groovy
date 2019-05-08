@@ -12,7 +12,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
@@ -22,33 +21,36 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://3.89.142.198:8088/')
 
-WebUI.setText(findTestObject('user login/Page_ProjectBackend/input_Username_username'), username_1)
+WebUI.setText(findTestObject('Object Repository/cart/input_Username_username'), Username_1)
 
-WebUI.setText(findTestObject('user login/Page_ProjectBackend/input_Password_password'), password_1)
+WebUI.setText(findTestObject('Object Repository/cart/input_Password_password'), Password_1)
 
-WebUI.click(findTestObject('user login/Page_ProjectBackend/button_Login'))
+WebUI.click(findTestObject('Object Repository/cart/button_Login'))
 
-WebUI.delay(20, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(10)
 
-WebUI.verifyElementPresent(findTestObject('user login/Page_ProjectBackend/a_Products'), 0)
+WebUI.click(findTestObject('Object Repository/cart/button_add to cart'))
 
-WebUI.verifyElementPresent(findTestObject('user login/Page_ProjectBackend/a_Carts'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/cart/div_already added'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/cart/span_1'), 0)
+
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-'To locate table'
 WebElement Table = driver.findElement(By.xpath('//*[@id="navbarSupportedContent"]'))
 
-'To locate rows of table it will Capture all the rows available in the table'
-List<WebElement> col = Table.findElements(By.className('nav-item'))
-int counter = 0;
-for (int i = 1; i <= col.size(); i++) {
-	counter++;
-}
-println('No. of columns' + counter)
-'compare the value'
-WebUI.verifyEqual(2, col.size())
+List<WebElement> cart = Table.findElements(By.className('badge-danger'))
 
+int counter = 0
+
+for (int i = 1; i <= cart.size(); i++) {
+	counter++
+}
+
+println('No. in cart ' + counter)
+
+WebUI.verifyEqual(1, counter)
 
 WebUI.closeBrowser()
 

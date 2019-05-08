@@ -12,16 +12,39 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By as By
+import org.openqa.selenium.By.ByClassName as ByClassName
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://3.89.142.198:8088/')
 
-WebUI.setText(findTestObject('Object Repository/empty user/Page_ProjectBackend/input_Password_password'), password_1)
+WebUI.setText(findTestObject('empty pass/Page_ProjectBackend/input_Username_username'), username_1)
 
-WebUI.click(findTestObject('Object Repository/empty user/Page_ProjectBackend/button_Login'))
+WebUI.click(findTestObject('Object Repository/user login/Page_ProjectBackend/button_Login'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/empty user/Page_ProjectBackend/label_Username is required'), 'Username is required')
+WebUI.verifyElementPresent(findTestObject('empty pass/Page_ProjectBackend/label_Password'), 0)
+
+WebUI.verifyElementPresent(findTestObject('empty pass/Page_ProjectBackend/label_Password is required'), 0)
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+WebElement Table = driver.findElement(By.tagName('app-login'))
+
+List<WebElement> word = Table.findElements(By.className('text-danger'))
+
+int counter = 0
+
+for (int i = 1; i <= word.size(); i++) {
+    counter++
+}
+
+println('No. of warning' + counter)
+
+WebUI.verifyEqual(2, counter)
 
 WebUI.closeBrowser()
 

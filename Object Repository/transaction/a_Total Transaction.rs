@@ -3,7 +3,7 @@
    <description></description>
    <name>a_Total Transaction</name>
    <tag></tag>
-   <elementGuidId>03bc39dc-c256-4d7e-ab8e-5c21ffb55aa7</elementGuidId>
+   <elementGuidId>0438ccef-8ef3-440f-8706-f8cf898d7c24</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

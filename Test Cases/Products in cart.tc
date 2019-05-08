@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Products in cart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f7c6e94f-8105-41a7-b045-c39be5d0107e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>28f465d9-c8ba-488a-adb6-ad86bfcacb62</id>
+      <masked>false</masked>
+      <name>Username_1</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>27ebf8d5-6dc1-41a0-9548-dbed7e1165a2</id>
+      <masked>false</masked>
+      <name>Password_1</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Actually calculate transaction</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dc861a06-6138-4620-8dcb-aec1335072c8</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f1be9adb-c6d6-4012-b597-9e3e15f2aa2b</id>
+      <masked>false</masked>
+      <name>Username_2</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8e1b73d2-390f-49d6-8f34-fc62b1e583a6</id>
+      <masked>false</masked>
+      <name>Password_2</name>
+   </variable>
+</TestCaseEntity>

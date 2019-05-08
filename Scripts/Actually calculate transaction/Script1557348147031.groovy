@@ -21,37 +21,49 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://3.89.142.198:8088/')
 
-WebUI.setText(findTestObject('Object Repository/logout/Page_ProjectBackend/input_Username_username'), username_1)
+WebUI.setText(findTestObject('Object Repository/transaction/input_Username_username'), Username_2)
 
-WebUI.setText(findTestObject('Object Repository/logout/Page_ProjectBackend/input_Password_password'), password_1)
+WebUI.setText(findTestObject('Object Repository/transaction/input_Password_password'), Password_2)
 
-WebUI.click(findTestObject('Object Repository/logout/Page_ProjectBackend/button_Login'))
+WebUI.click(findTestObject('Object Repository/transaction/button_Login'))
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Object Repository/logout/Page_ProjectBackend/button_Logout'))
+WebUI.click(findTestObject('Object Repository/transaction/a_Total Transaction'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/logout/Page_ProjectBackend/h2_Login'), 'Login')
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_20120 THB'), 20210)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/logout/Page_ProjectBackend/button_Login'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_60570 THB'), 60570)
 
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_1500 THB'), 1500)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_1500 THB'), 1500)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_1500 THB'), 1500)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/p_Total price  85190 THB'), 85190)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement Table = driver.findElement(By.tagName('app-login'))
+WebElement Table = driver.findElement(By.xpath('//*[@id="add-row"]'))
 
-List<WebElement> word = Table.findElements(By.className('btn-primary'))
+List<WebElement> price = Table.findElements(By.tagName('tr'))
 
-int counter = 0
+int counter = -1
 
-for (int i = 1; i <= word.size(); i++) {
+for (int i = 1; i <= price.size(); i++) {
     counter++
 }
 
-println('No. of button' + counter)
+println('No. of row ' + counter)
 
-WebUI.verifyEqual(1, counter)
+WebUI.verifyEqual(5, counter)
 
+price1 = WebUI.getText(findTestObject('Object Repository/transaction/p_Total price  85190 THB'))
+
+println(price1)
+
+WebUI.verifyEqual('Total price: 85,190 THB', price1)
 
 WebUI.closeBrowser()
 

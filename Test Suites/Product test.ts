@@ -38,13 +38,13 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>63082c2d-58fb-4e45-a92b-d4600cb905c9</guid>
+      <guid>cfb32d7d-ba14-4c4e-8274-916e89cab8a5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/all product are sold</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Products in cart</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>e6675f07-56b2-4170-9a4a-3ee653d33a34</id>
+         <id>c368c2dd-bebc-45fb-8919-bc101228e434</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -52,16 +52,16 @@
          <testDataId>Data Files/user</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>e6675f07-56b2-4170-9a4a-3ee653d33a34</testDataLinkId>
+         <testDataLinkId>c368c2dd-bebc-45fb-8919-bc101228e434</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>username_1</value>
-         <variableId>96ff59c6-78ac-44e0-99b9-cf9d8295ab32</variableId>
+         <variableId>28f465d9-c8ba-488a-adb6-ad86bfcacb62</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>e6675f07-56b2-4170-9a4a-3ee653d33a34</testDataLinkId>
+         <testDataLinkId>c368c2dd-bebc-45fb-8919-bc101228e434</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>password_1</value>
-         <variableId>0eddb02d-2fb3-4f00-9669-d088c9ee052e</variableId>
+         <variableId>27ebf8d5-6dc1-41a0-9548-dbed7e1165a2</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -89,6 +89,33 @@
          <type>DATA_COLUMN</type>
          <value>password_1</value>
          <variableId>0da92183-4217-4836-99e2-133c12ecef31</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3e99ca0a-cfe5-44dc-8016-731af01e9c5f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Actually calculate transaction</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>2b1d1848-7ec9-4de9-94da-a1f0e5b3b519</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/admin</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>2b1d1848-7ec9-4de9-94da-a1f0e5b3b519</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username_2</value>
+         <variableId>f1be9adb-c6d6-4012-b597-9e3e15f2aa2b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2b1d1848-7ec9-4de9-94da-a1f0e5b3b519</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password_2</value>
+         <variableId>8e1b73d2-390f-49d6-8f34-fc62b1e583a6</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

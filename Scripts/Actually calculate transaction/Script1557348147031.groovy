@@ -21,51 +21,49 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://3.89.142.198:8088/')
 
-WebUI.setText(findTestObject('Object Repository/user calculation/Page_ProjectBackend/input_Username_username'), username_1)
+WebUI.setText(findTestObject('Object Repository/transaction/input_Username_username'), Username_2)
 
-WebUI.setText(findTestObject('Object Repository/user calculation/Page_ProjectBackend/input_Password_password'), username_1)
+WebUI.setText(findTestObject('Object Repository/transaction/input_Password_password'), Password_2)
 
-WebUI.click(findTestObject('Object Repository/user calculation/Page_ProjectBackend/button_Login'))
+WebUI.click(findTestObject('Object Repository/transaction/button_Login'))
 
-WebUI.delay(20)
+WebUI.delay(10)
 
-WebUI.click(findTestObject('Object Repository/user calculation/Page_ProjectBackend/button_add to cart'))
+WebUI.click(findTestObject('Object Repository/transaction/a_Total Transaction'))
 
-WebUI.click(findTestObject('user calculation/Page_ProjectBackend/a_Carts'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_20120 THB'), 20210)
 
-WebUI.delay(3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_60570 THB'), 60570)
 
-WebUI.verifyElementText(findTestObject('Object Repository/user calculation/Page_ProjectBackend/td_Banana'), 'Banana')
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_1500 THB'), 1500)
 
-WebUI.verifyElementText(findTestObject('Object Repository/user calculation/Page_ProjectBackend/td_150 THB'), '150 THB')
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_1500 THB'), 1500)
 
-WebUI.setText(findTestObject('Object Repository/user calculation/Page_ProjectBackend/input_Banana_amount'), '10')
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/td_1500 THB'), 1500)
 
-WebUI.verifyElementText(findTestObject('user calculation/Page_ProjectBackend/p_Total price'), 'Total price: 1,500 THB')
-
-WebUI.click(findTestObject('Object Repository/user calculation/Page_ProjectBackend/button_confirm'))
-
-WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementPresent(findTestObject('user calculation/Page_ProjectBackend/div_successfully_added'), 0)
-
+WebUI.verifyElementPresent(findTestObject('Object Repository/transaction/p_Total price  85190 THB'), 85190)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
 WebElement Table = driver.findElement(By.xpath('//*[@id="add-row"]'))
 
-List<WebElement> price = Table.findElements(By.tagName('tbody'))
-int counter = 0
+List<WebElement> price = Table.findElements(By.tagName('tr'))
+
+int counter = -1
 
 for (int i = 1; i <= price.size(); i++) {
-	counter++
+    counter++
 }
 
 println('No. of row ' + counter)
 
-WebUI.verifyEqual(1, counter)
+WebUI.verifyEqual(5, counter)
 
+price1 = WebUI.getText(findTestObject('Object Repository/transaction/p_Total price  85190 THB'))
 
+println(price1)
+
+WebUI.verifyEqual('Total price: 85,190 THB', price1)
 
 WebUI.closeBrowser()
 

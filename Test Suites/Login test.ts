@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>c7b0c762-a266-4935-a5c6-be2b88772e2d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/user login</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -40,7 +40,7 @@
    <testCaseLink>
       <guid>949a6224-e550-408f-ae4b-05864721fa42</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/admin login</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -67,7 +67,7 @@
    <testCaseLink>
       <guid>fa0e5ae3-42ef-4d1d-a04f-9ad66f38c493</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/enter username</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -88,7 +88,7 @@
    <testCaseLink>
       <guid>b41e78bd-a265-4194-b8a0-730c533ccaf5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/enter password</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

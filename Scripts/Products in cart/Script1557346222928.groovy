@@ -21,19 +21,36 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://3.89.142.198:8088/')
 
-WebUI.setText(findTestObject('Object Repository/show cart/Page_ProjectBackend/input_Username_username'), username_1)
+WebUI.setText(findTestObject('Object Repository/cart/input_Username_username'), Username_1)
 
-WebUI.setText(findTestObject('Object Repository/show cart/Page_ProjectBackend/input_Password_password'), password_1)
+WebUI.setText(findTestObject('Object Repository/cart/input_Password_password'), Password_1)
 
-WebUI.click(findTestObject('Object Repository/show cart/Page_ProjectBackend/button_Login'))
+WebUI.click(findTestObject('Object Repository/cart/button_Login'))
 
-WebUI.delay(10, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(10)
 
-WebUI.click(findTestObject('Object Repository/show cart/Page_ProjectBackend/button_add to cart'))
+WebUI.click(findTestObject('Object Repository/cart/button_add to cart'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/show cart/Page_ProjectBackend/div_already added'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/cart/div_already added'), 0)
 
-WebUI.verifyElementText(findTestObject('Object Repository/show cart/Page_ProjectBackend/span_1'), '1')
+WebUI.verifyElementPresent(findTestObject('Object Repository/cart/span_1'), 0)
+
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+WebElement Table = driver.findElement(By.xpath('//*[@id="navbarSupportedContent"]'))
+
+List<WebElement> cart = Table.findElements(By.className('badge-danger'))
+
+int counter = 0
+
+for (int i = 1; i <= cart.size(); i++) {
+	counter++
+}
+
+println('No. in cart ' + counter)
+
+WebUI.verifyEqual(1, counter)
 
 WebUI.closeBrowser()
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>all product are sold</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d77ad3f7-d394-4d41-9be4-b048ce160cf6</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>96ff59c6-78ac-44e0-99b9-cf9d8295ab32</id>
+      <masked>false</masked>
+      <name>username_1</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0eddb02d-2fb3-4f00-9669-d088c9ee052e</id>
+      <masked>false</masked>
+      <name>password_1</name>
+   </variable>
+</TestCaseEntity>

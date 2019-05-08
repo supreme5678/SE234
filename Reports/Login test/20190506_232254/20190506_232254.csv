@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login test,Firefox 66.0,,,2019-05-06 23:22:56,2019-05-06 23:24:55,1m - 59.121s,INCOMPLETE
+,,,,,,,
+Test Cases/user login,Firefox 66.0,,,2019-05-06 23:22:56,2019-05-06 23:23:11,15.301s,FAILED
+"openBrowser("""")",Firefox 66.0,,,2019-05-06 23:22:56,2019-05-06 23:23:00,3.462s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-06 23:23:00,2019-05-06 23:23:11,11.371s,PASSED
+"setText(findTestObject(""user login/Page_ProjectBackend/input_Username_username""), username_1)",Firefox 66.0,,,2019-05-06 23:23:11,2019-05-06 23:23:11,0.086s,PASSED
+"setEncryptedText(findTestObject(""user login/Page_ProjectBackend/input_Password_password""), password_1)",Firefox 66.0,,,2019-05-06 23:23:11,2019-05-06 23:23:11,0.136s,FAILED
+,,,,,,,
+Test Cases/admin login,Firefox 66.0,,,2019-05-06 23:23:11,2019-05-06 23:24:55,1m - 43.633s,FAILED
+"openBrowser("""")",Firefox 66.0,,,2019-05-06 23:23:12,2019-05-06 23:23:15,2.917s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-06 23:23:15,2019-05-06 23:23:39,24.421s,PASSED
+"setText(findTestObject(""Object Repository/user login/Page_ProjectBackend/input_Username_username""), username_2)",Firefox 66.0,,,2019-05-06 23:23:39,2019-05-06 23:23:39,0.059s,PASSED
+"setText(findTestObject(""Object Repository/user login/Page_ProjectBackend/input_Password_password""), password_2)",Firefox 66.0,,,2019-05-06 23:23:39,2019-05-06 23:23:39,0.046s,PASSED
+"click(findTestObject(""Object Repository/user login/Page_ProjectBackend/button_Login""))",Firefox 66.0,,,2019-05-06 23:23:39,2019-05-06 23:23:39,0.249s,PASSED
+"waitForElementNotPresent(findTestObject(""user login/Page_ProjectBackend/button_Login""), 60)",Firefox 66.0,,,2019-05-06 23:23:39,2019-05-06 23:24:40,1m - 0.355s,PASSED
+"verifyElementClickable(findTestObject(""Object Repository/user login/Page_ProjectBackend/a_Products""), STOP_ON_FAILURE)",Firefox 66.0,,,2019-05-06 23:24:40,2019-05-06 23:24:55,15.426s,FAILED

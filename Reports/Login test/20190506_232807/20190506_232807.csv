@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login test,Firefox 66.0,,,2019-05-06 23:28:09,2019-05-06 23:30:05,1m - 55.593s,INCOMPLETE
+,,,,,,,
+Test Cases/admin login,Firefox 66.0,,,2019-05-06 23:28:09,2019-05-06 23:30:05,1m - 55.406s,FAILED
+"openBrowser("""")",Firefox 66.0,,,2019-05-06 23:28:10,2019-05-06 23:28:13,3.447s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-06 23:28:13,2019-05-06 23:29:06,52.668s,PASSED
+"setText(findTestObject(""Object Repository/user login/Page_ProjectBackend/input_Username_username""), username_2)",Firefox 66.0,,,2019-05-06 23:29:06,2019-05-06 23:29:06,0.090s,PASSED
+"setText(findTestObject(""Object Repository/user login/Page_ProjectBackend/input_Password_password""), password_2)",Firefox 66.0,,,2019-05-06 23:29:06,2019-05-06 23:29:06,0.054s,PASSED
+"click(findTestObject(""Object Repository/user login/Page_ProjectBackend/button_Login""))",Firefox 66.0,,,2019-05-06 23:29:06,2019-05-06 23:29:06,0.249s,PASSED
+"waitForElementNotPresent(findTestObject(""user login/Page_ProjectBackend/button_Login""), 60)",Firefox 66.0,,,2019-05-06 23:29:06,2019-05-06 23:30:05,58.619s,FAILED

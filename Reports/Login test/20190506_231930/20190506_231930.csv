@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login test,Firefox 66.0,,,2019-05-06 23:19:32,2019-05-06 23:19:52,19.913s,FAILED
+,,,,,,,
+Test Cases/user login,Firefox 66.0,,,2019-05-06 23:19:32,2019-05-06 23:19:52,19.418s,FAILED
+"openBrowser("""")",Firefox 66.0,,,2019-05-06 23:19:32,2019-05-06 23:19:36,3.481s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-06 23:19:36,2019-05-06 23:19:48,11.989s,PASSED
+"setText(findTestObject(""user login/Page_ProjectBackend/input_Username_username""), username)",Firefox 66.0,,,2019-05-06 23:19:48,2019-05-06 23:19:48,0.082s,PASSED
+"setEncryptedText(findTestObject(""user login/Page_ProjectBackend/input_Password_password""), password)",Firefox 66.0,,,2019-05-06 23:19:48,2019-05-06 23:19:48,0.141s,PASSED
+"click(findTestObject(""user login/Page_ProjectBackend/button_Login""))",Firefox 66.0,,,2019-05-06 23:19:48,2019-05-06 23:19:48,0.246s,PASSED
+"waitForElementNotPresent(findTestObject(""user login/Page_ProjectBackend/button_Login""), 60)",Firefox 66.0,,,2019-05-06 23:19:48,2019-05-06 23:19:52,3.153s,FAILED
+,,,,,,,
+Test Cases/admin login,Firefox 66.0,,,2019-05-06 23:19:52,2019-05-06 23:19:52,0.231s,FAILED
+"openBrowser("""")",Firefox 66.0,,,2019-05-06 23:19:52,2019-05-06 23:19:52,0.061s,FAILED

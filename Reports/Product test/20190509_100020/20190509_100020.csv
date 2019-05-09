@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Product test,Firefox 66.0,,,2019-05-09 10:00:22,2019-05-09 10:01:00,37.430s,PASSED
+,,,,,,,
+Test Cases/Actually calculate transaction,Firefox 66.0,,,2019-05-09 10:00:22,2019-05-09 10:01:00,37.152s,PASSED
+"openBrowser("""")",Firefox 66.0,,,2019-05-09 10:00:23,2019-05-09 10:00:26,3.214s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-09 10:00:26,2019-05-09 10:00:47,20.678s,PASSED
+"setText(findTestObject(""Object Repository/transaction/input_Username_username""), Username_2)",Firefox 66.0,,,2019-05-09 10:00:47,2019-05-09 10:00:47,0.261s,PASSED
+"setText(findTestObject(""Object Repository/transaction/input_Password_password""), Password_2)",Firefox 66.0,,,2019-05-09 10:00:47,2019-05-09 10:00:47,0.165s,PASSED
+"click(findTestObject(""Object Repository/transaction/button_Login""))",Firefox 66.0,,,2019-05-09 10:00:47,2019-05-09 10:00:48,0.499s,PASSED
+delay(10),Firefox 66.0,,,2019-05-09 10:00:48,2019-05-09 10:00:58,10.044s,PASSED
+"click(findTestObject(""Object Repository/transaction/a_Total Transaction""))",Firefox 66.0,,,2019-05-09 10:00:58,2019-05-09 10:00:58,0.319s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/transaction/td_20120 THB""), 20210)",Firefox 66.0,,,2019-05-09 10:00:58,2019-05-09 10:00:58,0.565s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/transaction/td_60570 THB""), 60570)",Firefox 66.0,,,2019-05-09 10:00:58,2019-05-09 10:00:59,0.024s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/transaction/td_1500 THB""), 1500)",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.018s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/transaction/td_1500 THB""), 1500)",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.017s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/transaction/td_1500 THB""), 1500)",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.018s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/transaction/p_Total price  85190 THB""), 85190)",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.020s,PASSED
+driver = getWebDriver(),Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.008s,PASSED
+"Table = driver.findElement(By.xpath(""//*[@id=""add-row""]""))",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.032s,PASSED
+"price = Table.findElements(By.tagName(""tr""))",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.022s,PASSED
+counter = -1,Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.000s,PASSED
+"for ([i = 1, i <= price.size(), (i++)])",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.011s,PASSED
+"println(""No. of row "" + counter)",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.004s,PASSED
+"verifyEqual(5, counter)",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.009s,PASSED
+"price1 = getText(findTestObject(""Object Repository/transaction/p_Total price  85190 THB""))",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.047s,PASSED
+println(price1),Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.000s,PASSED
+"verifyEqual(""Total price: 85,190 THB"", price1)",Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:00:59,0.003s,PASSED
+closeBrowser(),Firefox 66.0,,,2019-05-09 10:00:59,2019-05-09 10:01:00,0.805s,PASSED

@@ -21,34 +21,15 @@ System.setProperty('webdriver.chrome.driver', 'C:\\chromedriver.exe')
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://3.89.142.198:8088/')
+WebUI.navigateToUrl('http://3.82.247.233:8088/')
 
 WebUI.setText(findTestObject('Object Repository/login fail/Page_ProjectBackend/input_Username_username'), 'user')
 
-WebUI.setText(findTestObject('Object Repository/login fail/Page_ProjectBackend/input_Password_password'), 'ser')
+WebUI.setText(findTestObject('Object Repository/login fail/Page_ProjectBackend/input_Password_password'), 'sser')
 
 WebUI.click(findTestObject('Object Repository/login fail/Page_ProjectBackend/button_Login'))
 
-not_run: WebUI.delay(10)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect'), 
-    0)
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement Table = driver.findElement(By.tagName('app-login'))
-
-List<WebElement> word = Table.findElements(By.className('text-danger'))
-
-int counter = 0
-
-for (int i = 0; i <= word.size(); i++) {
-    counter++
-}
-
-println('No. of warning' + counter)
-
-WebUI.verifyEqual(1, counter)
+WebUI.verifyElementText(findTestObject('login fail/Page_ProjectBackend/error message'), 'Username/password is incorrect')
 
 WebUI.closeBrowser()
 

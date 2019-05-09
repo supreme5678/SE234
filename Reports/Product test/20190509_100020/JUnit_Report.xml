@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Product test" time="37" tests="1" failures="0" errors="0">
+   <testsuite name="Product test" tests="1" failures="0" errors="0" time="37" timestamp="2019-05-09 10:00:22" hostname="subtawee - 192.168.1.8" id="Test Suites/Product test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/subtawee/git/SE234/Reports/Product test/20190509_100020"/>
+         <property name="logFiles" value="/Users/subtawee/git/SE234/Reports/Product test/20190509_100020/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="subtawee - 192.168.1.8"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Firefox 66.0"/>
+         <property name="hostAddress" value="192.168.1.8"/>
+         <property name="sessionId" value="2dcbc3b1-5528-2044-a073-5dcb925bced1"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Actually calculate transaction" classname="Test Cases/Actually calculate transaction" status="PASSED">
+         <system-out><![CDATA[2019-05-09 10:00:22 - [TEST_CASE][PASSED] - Test Cases/Actually calculate transaction: Test Cases/Actually calculate transaction
+
+2019-05-09 10:00:23 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-09 10:00:23 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-05-09 10:00:23 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-05-09 10:00:26 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-09 10:00:26 - [TEST_STEP][PASSED] - navigateToUrl("http://3.89.142.198:8088/"): Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 10:00:47 - [MESSAGE][PASSED] - Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 10:00:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/transaction/input_Username_username"), Username_2): Text 'admin' is set on object 'Object Repository/transaction/input_Username_username'
+
+2019-05-09 10:00:47 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/transaction/input_Username_username'
+
+2019-05-09 10:00:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/transaction/input_Password_password"), Password_2): Text 'admin' is set on object 'Object Repository/transaction/input_Password_password'
+
+2019-05-09 10:00:47 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/transaction/input_Password_password'
+
+2019-05-09 10:00:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/transaction/button_Login")): Object: 'Object Repository/transaction/button_Login' is clicked on
+
+2019-05-09 10:00:48 - [MESSAGE][PASSED] - Object: 'Object Repository/transaction/button_Login' is clicked on
+
+2019-05-09 10:00:48 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-05-09 10:00:58 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-05-09 10:00:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/transaction/a_Total Transaction")): Object: 'Object Repository/transaction/a_Total Transaction' is clicked on
+
+2019-05-09 10:00:58 - [MESSAGE][PASSED] - Object: 'Object Repository/transaction/a_Total Transaction' is clicked on
+
+2019-05-09 10:00:58 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/transaction/td_20120 THB"), 20210): Object 'Object Repository/transaction/td_20120 THB' is present
+
+2019-05-09 10:00:58 - [MESSAGE][PASSED] - Object 'Object Repository/transaction/td_20120 THB' is present
+
+2019-05-09 10:00:58 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/transaction/td_60570 THB"), 60570): Object 'Object Repository/transaction/td_60570 THB' is present
+
+2019-05-09 10:00:59 - [MESSAGE][PASSED] - Object 'Object Repository/transaction/td_60570 THB' is present
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/transaction/td_1500 THB"), 1500): Object 'Object Repository/transaction/td_1500 THB' is present
+
+2019-05-09 10:00:59 - [MESSAGE][PASSED] - Object 'Object Repository/transaction/td_1500 THB' is present
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/transaction/td_1500 THB"), 1500): Object 'Object Repository/transaction/td_1500 THB' is present
+
+2019-05-09 10:00:59 - [MESSAGE][PASSED] - Object 'Object Repository/transaction/td_1500 THB' is present
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/transaction/td_1500 THB"), 1500): Object 'Object Repository/transaction/td_1500 THB' is present
+
+2019-05-09 10:00:59 - [MESSAGE][PASSED] - Object 'Object Repository/transaction/td_1500 THB' is present
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/transaction/p_Total price  85190 THB"), 85190): Object 'Object Repository/transaction/p_Total price  85190 THB' is present
+
+2019-05-09 10:00:59 - [MESSAGE][PASSED] - Object 'Object Repository/transaction/p_Total price  85190 THB' is present
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - Table = driver.findElement(By.xpath("//*[@id="add-row"]")): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - price = Table.findElements(By.tagName("tr")): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - counter = -1: null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - for ([i = 1, i <= price.size(), (i++)]): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - println("No. of row " + counter): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - verifyEqual(5, counter): Actual object '5' and expected object '5' are equal
+
+2019-05-09 10:00:59 - [MESSAGE][PASSED] - Actual object '5' and expected object '5' are equal
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - price1 = getText(findTestObject("Object Repository/transaction/p_Total price  85190 THB")): Text of object 'Object Repository/transaction/p_Total price  85190 THB' is: 'Total price: 85,190 THB'
+
+2019-05-09 10:00:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/transaction/p_Total price  85190 THB' is: 'Total price: 85,190 THB'
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - println(price1): null
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - verifyEqual("Total price: 85,190 THB", price1): Actual object 'Total price: 85,190 THB' and expected object 'Total price: 85,190 THB' are equal
+
+2019-05-09 10:00:59 - [MESSAGE][PASSED] - Actual object 'Total price: 85,190 THB' and expected object 'Total price: 85,190 THB' are equal
+
+2019-05-09 10:00:59 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-09 10:01:00 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-05-09 10:00:22 - [TEST_SUITE][PASSED] - Product test: Test Cases/Actually calculate transaction]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

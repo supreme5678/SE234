@@ -1,0 +1,107 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login test,Firefox 66.0,,,2019-05-09 09:56:47,2019-05-09 09:59:21,2m - 33.606s,PASSED
+,,,,,,,
+Test Cases/user login,Firefox 66.0,,,2019-05-09 09:56:47,2019-05-09 09:57:27,39.890s,PASSED
+"openBrowser("""")",Firefox 66.0,,,2019-05-09 09:56:48,2019-05-09 09:56:51,3.834s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-09 09:56:51,2019-05-09 09:57:05,13.917s,PASSED
+"setText(findTestObject(""user login/Page_ProjectBackend/input_Username_username""), username_1)",Firefox 66.0,,,2019-05-09 09:57:05,2019-05-09 09:57:06,0.623s,PASSED
+"setText(findTestObject(""user login/Page_ProjectBackend/input_Password_password""), password_1)",Firefox 66.0,,,2019-05-09 09:57:06,2019-05-09 09:57:06,0.097s,PASSED
+"click(findTestObject(""user login/Page_ProjectBackend/button_Login""))",Firefox 66.0,,,2019-05-09 09:57:06,2019-05-09 09:57:06,0.300s,PASSED
+"delay(20, STOP_ON_FAILURE)",Firefox 66.0,,,2019-05-09 09:57:06,2019-05-09 09:57:26,20.057s,PASSED
+"verifyElementPresent(findTestObject(""user login/Page_ProjectBackend/a_Products""), 0)",Firefox 66.0,,,2019-05-09 09:57:26,2019-05-09 09:57:26,0.026s,PASSED
+"verifyElementPresent(findTestObject(""user login/Page_ProjectBackend/a_Carts""), 0)",Firefox 66.0,,,2019-05-09 09:57:26,2019-05-09 09:57:26,0.024s,PASSED
+driver = getWebDriver(),Firefox 66.0,,,2019-05-09 09:57:26,2019-05-09 09:57:26,0.014s,PASSED
+"Table = driver.findElement(By.xpath(""//*[@id=""navbarSupportedContent""]""))",Firefox 66.0,To locate table,,2019-05-09 09:57:26,2019-05-09 09:57:27,0.033s,PASSED
+"col = Table.findElements(By.className(""nav-item""))",Firefox 66.0,To locate rows of table it will Capture all the rows available in the table,,2019-05-09 09:57:27,2019-05-09 09:57:27,0.016s,PASSED
+counter = 0,Firefox 66.0,,,2019-05-09 09:57:27,2019-05-09 09:57:27,0.001s,PASSED
+"for ([i = 1, i <= col.size(), (i++)])",Firefox 66.0,,,2019-05-09 09:57:27,2019-05-09 09:57:27,0.003s,PASSED
+"println(""No. of columns"" + counter)",Firefox 66.0,,,2019-05-09 09:57:27,2019-05-09 09:57:27,0.005s,PASSED
+"verifyEqual(2, col.size())",Firefox 66.0,compare the value,,2019-05-09 09:57:27,2019-05-09 09:57:27,0.009s,PASSED
+closeBrowser(),Firefox 66.0,,,2019-05-09 09:57:27,2019-05-09 09:57:27,0.576s,PASSED
+,,,,,,,
+Test Cases/admin login,Firefox 66.0,,,2019-05-09 09:57:27,2019-05-09 09:57:56,28.426s,PASSED
+"openBrowser("""")",Firefox 66.0,,,2019-05-09 09:57:27,2019-05-09 09:57:30,2.480s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-09 09:57:30,2019-05-09 09:57:44,14.151s,PASSED
+"setText(findTestObject(""admin login/Page_ProjectBackend/input_Username""), username_2)",Firefox 66.0,,,2019-05-09 09:57:44,2019-05-09 09:57:44,0.188s,PASSED
+"setText(findTestObject(""admin login/Page_ProjectBackend/input_Password""), password_2)",Firefox 66.0,,,2019-05-09 09:57:44,2019-05-09 09:57:44,0.090s,PASSED
+"click(findTestObject(""Object Repository/user login/Page_ProjectBackend/button_Login""))",Firefox 66.0,,,2019-05-09 09:57:44,2019-05-09 09:57:45,0.386s,PASSED
+delay(10),Firefox 66.0,,,2019-05-09 09:57:45,2019-05-09 09:57:55,10.009s,PASSED
+"verifyElementPresent(findTestObject(""admin login/Page_ProjectBackend/a_Products""), 0)",Firefox 66.0,,,2019-05-09 09:57:55,2019-05-09 09:57:55,0.033s,PASSED
+"verifyElementPresent(findTestObject(""admin login/Page_ProjectBackend/a_Total Transaction""), 0)",Firefox 66.0,,,2019-05-09 09:57:55,2019-05-09 09:57:55,0.081s,PASSED
+driver = getWebDriver(),Firefox 66.0,,,2019-05-09 09:57:55,2019-05-09 09:57:55,0.001s,PASSED
+"Table = driver.findElement(By.xpath(""//*[@id=""navbarSupportedContent""]""))",Firefox 66.0,To locate table,,2019-05-09 09:57:55,2019-05-09 09:57:55,0.012s,PASSED
+"col = Table.findElements(By.className(""nav-item""))",Firefox 66.0,To locate rows of table it will Capture all the rows available in the table,,2019-05-09 09:57:55,2019-05-09 09:57:55,0.012s,PASSED
+counter = 0,Firefox 66.0,,,2019-05-09 09:57:55,2019-05-09 09:57:55,0.000s,PASSED
+"for ([i = 1, i <= col.size(), (i++)])",Firefox 66.0,,,2019-05-09 09:57:55,2019-05-09 09:57:55,0.002s,PASSED
+"println(""No. of columns"" + counter)",Firefox 66.0,,,2019-05-09 09:57:55,2019-05-09 09:57:55,0.000s,PASSED
+"verifyEqual(2, col.size())",Firefox 66.0,compare the value,,2019-05-09 09:57:55,2019-05-09 09:57:55,0.002s,PASSED
+closeBrowser(),Firefox 66.0,,,2019-05-09 09:57:55,2019-05-09 09:57:56,0.698s,PASSED
+,,,,,,,
+Test Cases/enter username,Firefox 66.0,,,2019-05-09 09:57:56,2019-05-09 09:58:15,18.999s,PASSED
+"openBrowser("""")",Firefox 66.0,,,2019-05-09 09:57:56,2019-05-09 09:57:59,3.406s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-09 09:57:59,2019-05-09 09:58:13,14.252s,PASSED
+"setText(findTestObject(""empty pass/Page_ProjectBackend/input_Username_username""), username_1)",Firefox 66.0,,,2019-05-09 09:58:13,2019-05-09 09:58:14,0.152s,PASSED
+"click(findTestObject(""Object Repository/user login/Page_ProjectBackend/button_Login""))",Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.253s,PASSED
+"verifyElementPresent(findTestObject(""empty pass/Page_ProjectBackend/label_Password""), 0)",Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.045s,PASSED
+"verifyElementPresent(findTestObject(""empty pass/Page_ProjectBackend/label_Password is required""), 0)",Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.029s,PASSED
+driver = getWebDriver(),Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.001s,PASSED
+"Table = driver.findElement(By.tagName(""app-login""))",Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.013s,PASSED
+"word = Table.findElements(By.className(""text-danger""))",Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.010s,PASSED
+counter = 0,Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.000s,PASSED
+"for ([i = 1, i <= word.size(), (i++)])",Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.002s,PASSED
+"println(""No. of warning"" + counter)",Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.001s,PASSED
+"verifyEqual(2, counter)",Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:14,0.002s,PASSED
+closeBrowser(),Firefox 66.0,,,2019-05-09 09:58:14,2019-05-09 09:58:15,0.576s,PASSED
+,,,,,,,
+Test Cases/enter password,Firefox 66.0,,,2019-05-09 09:58:15,2019-05-09 09:58:33,18.462s,PASSED
+"openBrowser("""")",Firefox 66.0,,,2019-05-09 09:58:15,2019-05-09 09:58:18,3.499s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-09 09:58:18,2019-05-09 09:58:32,13.736s,PASSED
+"setText(findTestObject(""empty user/Page_ProjectBackend/input_Password_password""), password_1)",Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.074s,PASSED
+"click(findTestObject(""Object Repository/user login/Page_ProjectBackend/button_Login""))",Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.249s,PASSED
+"verifyElementPresent(findTestObject(""empty user/Page_ProjectBackend/label_Username""), 0)",Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.018s,PASSED
+"verifyElementPresent(findTestObject(""empty user/Page_ProjectBackend/label_Username is required""), 0)",Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.017s,PASSED
+driver = getWebDriver(),Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.001s,PASSED
+"Table = driver.findElement(By.tagName(""app-login""))",Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.006s,PASSED
+"word = Table.findElements(By.className(""text-danger""))",Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.007s,PASSED
+counter = 0,Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.001s,PASSED
+"for ([i = 1, i <= word.size(), (i++)])",Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.001s,PASSED
+"println(""No. of warning"" + counter)",Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.001s,PASSED
+"verifyEqual(2, counter)",Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:32,0.002s,PASSED
+closeBrowser(),Firefox 66.0,,,2019-05-09 09:58:32,2019-05-09 09:58:33,0.580s,PASSED
+,,,,,,,
+Test Cases/login fail,Firefox 66.0,,,2019-05-09 09:58:33,2019-05-09 09:58:48,15.473s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", ""C:\chromedriver.exe"")",Firefox 66.0,,,2019-05-09 09:58:33,2019-05-09 09:58:33,0.005s,PASSED
+"openBrowser("""")",Firefox 66.0,,,2019-05-09 09:58:33,2019-05-09 09:58:36,2.985s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-09 09:58:36,2019-05-09 09:58:47,11.015s,PASSED
+"setText(findTestObject(""Object Repository/login fail/Page_ProjectBackend/input_Username_username""), ""user"")",Firefox 66.0,,,2019-05-09 09:58:47,2019-05-09 09:58:48,0.195s,PASSED
+"setText(findTestObject(""Object Repository/login fail/Page_ProjectBackend/input_Password_password""), ""ser"")",Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.059s,PASSED
+"click(findTestObject(""Object Repository/login fail/Page_ProjectBackend/button_Login""))",Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.266s,PASSED
+delay(10),Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.002s,NOT_RUN
+"verifyElementPresent(findTestObject(""Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect""), 0)",Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.027s,PASSED
+driver = getWebDriver(),Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.000s,PASSED
+"Table = driver.findElement(By.tagName(""app-login""))",Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.011s,PASSED
+"word = Table.findElements(By.className(""text-danger""))",Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.011s,PASSED
+counter = 0,Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.000s,PASSED
+"for ([i = 0, i <= word.size(), (i++)])",Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.001s,PASSED
+"println(""No. of warning"" + counter)",Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.000s,PASSED
+"verifyEqual(1, counter)",Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.003s,PASSED
+closeBrowser(),Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:58:48,0.592s,PASSED
+,,,,,,,
+Test Cases/logout,Firefox 66.0,,,2019-05-09 09:58:48,2019-05-09 09:59:20,32.002s,PASSED
+"openBrowser("""")",Firefox 66.0,,,2019-05-09 09:58:49,2019-05-09 09:58:52,3.080s,PASSED
+"navigateToUrl(""http://3.89.142.198:8088/"")",Firefox 66.0,,,2019-05-09 09:58:52,2019-05-09 09:59:09,17.154s,PASSED
+"setText(findTestObject(""Object Repository/logout/Page_ProjectBackend/input_Username_username""), username_1)",Firefox 66.0,,,2019-05-09 09:59:09,2019-05-09 09:59:09,0.088s,PASSED
+"setText(findTestObject(""Object Repository/logout/Page_ProjectBackend/input_Password_password""), password_1)",Firefox 66.0,,,2019-05-09 09:59:09,2019-05-09 09:59:09,0.073s,PASSED
+"click(findTestObject(""Object Repository/logout/Page_ProjectBackend/button_Login""))",Firefox 66.0,,,2019-05-09 09:59:09,2019-05-09 09:59:09,0.267s,PASSED
+delay(10),Firefox 66.0,,,2019-05-09 09:59:09,2019-05-09 09:59:19,10.004s,PASSED
+"click(findTestObject(""Object Repository/logout/Page_ProjectBackend/button_Logout""))",Firefox 66.0,,,2019-05-09 09:59:19,2019-05-09 09:59:20,0.370s,PASSED
+"verifyElementText(findTestObject(""Object Repository/logout/Page_ProjectBackend/h2_Login""), ""Login"")",Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.077s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/logout/Page_ProjectBackend/button_Login""), 0)",Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.024s,PASSED
+driver = getWebDriver(),Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.001s,PASSED
+"Table = driver.findElement(By.tagName(""app-login""))",Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.010s,PASSED
+"word = Table.findElements(By.className(""btn-primary""))",Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.009s,PASSED
+counter = 0,Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.000s,PASSED
+"for ([i = 1, i <= word.size(), (i++)])",Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.001s,PASSED
+"println(""No. of button"" + counter)",Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.002s,PASSED
+"verifyEqual(1, counter)",Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.002s,PASSED
+closeBrowser(),Firefox 66.0,,,2019-05-09 09:59:20,2019-05-09 09:59:20,0.579s,PASSED

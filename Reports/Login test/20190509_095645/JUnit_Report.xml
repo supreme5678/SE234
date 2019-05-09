@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Login test" time="153" tests="6" failures="0" errors="0">
+   <testsuite name="Login test" tests="6" failures="0" errors="0" time="153" timestamp="2019-05-09 09:56:47" hostname="subtawee - 192.168.1.8" id="Test Suites/Login test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/subtawee/git/SE234/Reports/Login test/20190509_095645"/>
+         <property name="logFiles" value="/Users/subtawee/git/SE234/Reports/Login test/20190509_095645/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="subtawee - 192.168.1.8"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Firefox 66.0"/>
+         <property name="hostAddress" value="192.168.1.8"/>
+         <property name="sessionId" value="f5174418-1d8d-9143-92a7-4039d651b176"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/user login" classname="Test Cases/user login" status="PASSED">
+         <system-out><![CDATA[2019-05-09 09:56:47 - [TEST_CASE][PASSED] - Test Cases/user login: Test Cases/user login
+
+2019-05-09 09:56:48 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-09 09:56:48 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-05-09 09:56:48 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-05-09 09:56:51 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-09 09:56:51 - [TEST_STEP][PASSED] - navigateToUrl("http://3.89.142.198:8088/"): Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:57:05 - [MESSAGE][PASSED] - Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:57:05 - [TEST_STEP][PASSED] - setText(findTestObject("user login/Page_ProjectBackend/input_Username_username"), username_1): Text 'user' is set on object 'Object Repository/user login/Page_ProjectBackend/input_Username_username'
+
+2019-05-09 09:57:06 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/user login/Page_ProjectBackend/input_Username_username'
+
+2019-05-09 09:57:06 - [TEST_STEP][PASSED] - setText(findTestObject("user login/Page_ProjectBackend/input_Password_password"), password_1): Text 'user' is set on object 'Object Repository/user login/Page_ProjectBackend/input_Password_password'
+
+2019-05-09 09:57:06 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/user login/Page_ProjectBackend/input_Password_password'
+
+2019-05-09 09:57:06 - [TEST_STEP][PASSED] - click(findTestObject("user login/Page_ProjectBackend/button_Login")): Object: 'Object Repository/user login/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:57:06 - [MESSAGE][PASSED] - Object: 'Object Repository/user login/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:57:06 - [TEST_STEP][PASSED] - delay(20, STOP_ON_FAILURE): Delayed 20 second(s)
+
+2019-05-09 09:57:26 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2019-05-09 09:57:26 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("user login/Page_ProjectBackend/a_Products"), 0): Object 'Object Repository/user login/Page_ProjectBackend/a_Products' is present
+
+2019-05-09 09:57:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:57:26 - [MESSAGE][PASSED] - Object 'Object Repository/user login/Page_ProjectBackend/a_Products' is present
+
+2019-05-09 09:57:26 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("user login/Page_ProjectBackend/a_Carts"), 0): Object 'Object Repository/user login/Page_ProjectBackend/a_Carts' is present
+
+2019-05-09 09:57:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:57:26 - [MESSAGE][PASSED] - Object 'Object Repository/user login/Page_ProjectBackend/a_Carts' is present
+
+2019-05-09 09:57:26 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-05-09 09:57:26 - [TEST_STEP][PASSED] - Table = driver.findElement(By.xpath("//*[@id="navbarSupportedContent"]")): null
+
+2019-05-09 09:57:27 - [TEST_STEP][PASSED] - col = Table.findElements(By.className("nav-item")): null
+
+2019-05-09 09:57:27 - [TEST_STEP][PASSED] - counter = 0: null
+
+2019-05-09 09:57:27 - [TEST_STEP][PASSED] - for ([i = 1, i <= col.size(), (i++)]): null
+
+2019-05-09 09:57:27 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:57:27 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:57:27 - [TEST_STEP][PASSED] - println("No. of columns" + counter): null
+
+2019-05-09 09:57:27 - [TEST_STEP][PASSED] - verifyEqual(2, col.size()): Actual object '2' and expected object '2' are equal
+
+2019-05-09 09:57:27 - [MESSAGE][PASSED] - Actual object '2' and expected object '2' are equal
+
+2019-05-09 09:57:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-09 09:57:27 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/admin login" classname="Test Cases/admin login" status="PASSED">
+         <system-out><![CDATA[2019-05-09 09:57:27 - [TEST_CASE][PASSED] - Test Cases/admin login: Test Cases/admin login
+
+2019-05-09 09:57:27 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-09 09:57:27 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-05-09 09:57:30 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-09 09:57:30 - [TEST_STEP][PASSED] - navigateToUrl("http://3.89.142.198:8088/"): Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:57:44 - [MESSAGE][PASSED] - Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:57:44 - [TEST_STEP][PASSED] - setText(findTestObject("admin login/Page_ProjectBackend/input_Username"), username_2): Text 'admin' is set on object 'Object Repository/admin login/Page_ProjectBackend/input_Username'
+
+2019-05-09 09:57:44 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/admin login/Page_ProjectBackend/input_Username'
+
+2019-05-09 09:57:44 - [TEST_STEP][PASSED] - setText(findTestObject("admin login/Page_ProjectBackend/input_Password"), password_2): Text 'admin' is set on object 'Object Repository/admin login/Page_ProjectBackend/input_Password'
+
+2019-05-09 09:57:44 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/admin login/Page_ProjectBackend/input_Password'
+
+2019-05-09 09:57:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/user login/Page_ProjectBackend/button_Login")): Object: 'Object Repository/user login/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:57:45 - [MESSAGE][PASSED] - Object: 'Object Repository/user login/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:57:45 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-05-09 09:57:55 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("admin login/Page_ProjectBackend/a_Products"), 0): Object 'Object Repository/admin login/Page_ProjectBackend/a_Products' is present
+
+2019-05-09 09:57:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:57:55 - [MESSAGE][PASSED] - Object 'Object Repository/admin login/Page_ProjectBackend/a_Products' is present
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("admin login/Page_ProjectBackend/a_Total Transaction"), 0): Object 'Object Repository/admin login/Page_ProjectBackend/a_Total Transaction' is present
+
+2019-05-09 09:57:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:57:55 - [MESSAGE][PASSED] - Object 'Object Repository/admin login/Page_ProjectBackend/a_Total Transaction' is present
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - Table = driver.findElement(By.xpath("//*[@id="navbarSupportedContent"]")): null
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - col = Table.findElements(By.className("nav-item")): null
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - counter = 0: null
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - for ([i = 1, i <= col.size(), (i++)]): null
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - println("No. of columns" + counter): null
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - verifyEqual(2, col.size()): Actual object '2' and expected object '2' are equal
+
+2019-05-09 09:57:55 - [MESSAGE][PASSED] - Actual object '2' and expected object '2' are equal
+
+2019-05-09 09:57:55 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-09 09:57:56 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/enter username" classname="Test Cases/enter username" status="PASSED">
+         <system-out><![CDATA[2019-05-09 09:57:56 - [TEST_CASE][PASSED] - Test Cases/enter username: Test Cases/enter username
+
+2019-05-09 09:57:56 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-09 09:57:56 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-05-09 09:57:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-09 09:57:59 - [TEST_STEP][PASSED] - navigateToUrl("http://3.89.142.198:8088/"): Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:58:13 - [MESSAGE][PASSED] - Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:58:13 - [TEST_STEP][PASSED] - setText(findTestObject("empty pass/Page_ProjectBackend/input_Username_username"), username_1): Text 'user' is set on object 'Object Repository/empty pass/Page_ProjectBackend/input_Username_username'
+
+2019-05-09 09:58:14 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/empty pass/Page_ProjectBackend/input_Username_username'
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/user login/Page_ProjectBackend/button_Login")): Object: 'Object Repository/user login/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:58:14 - [MESSAGE][PASSED] - Object: 'Object Repository/user login/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("empty pass/Page_ProjectBackend/label_Password"), 0): Object 'Object Repository/empty pass/Page_ProjectBackend/label_Password' is present
+
+2019-05-09 09:58:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:58:14 - [MESSAGE][PASSED] - Object 'Object Repository/empty pass/Page_ProjectBackend/label_Password' is present
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("empty pass/Page_ProjectBackend/label_Password is required"), 0): Object 'Object Repository/empty pass/Page_ProjectBackend/label_Password is required' is present
+
+2019-05-09 09:58:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:58:14 - [MESSAGE][PASSED] - Object 'Object Repository/empty pass/Page_ProjectBackend/label_Password is required' is present
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - Table = driver.findElement(By.tagName("app-login")): null
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - word = Table.findElements(By.className("text-danger")): null
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - counter = 0: null
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - for ([i = 1, i <= word.size(), (i++)]): null
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - println("No. of warning" + counter): null
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - verifyEqual(2, counter): Actual object '2' and expected object '2' are equal
+
+2019-05-09 09:58:14 - [MESSAGE][PASSED] - Actual object '2' and expected object '2' are equal
+
+2019-05-09 09:58:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-09 09:58:15 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/enter password" classname="Test Cases/enter password" status="PASSED">
+         <system-out><![CDATA[2019-05-09 09:58:15 - [TEST_CASE][PASSED] - Test Cases/enter password: Test Cases/enter password
+
+2019-05-09 09:58:15 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-09 09:58:15 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-05-09 09:58:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-09 09:58:18 - [TEST_STEP][PASSED] - navigateToUrl("http://3.89.142.198:8088/"): Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:58:32 - [MESSAGE][PASSED] - Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - setText(findTestObject("empty user/Page_ProjectBackend/input_Password_password"), password_1): Text 'user' is set on object 'Object Repository/empty user/Page_ProjectBackend/input_Password_password'
+
+2019-05-09 09:58:32 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/empty user/Page_ProjectBackend/input_Password_password'
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/user login/Page_ProjectBackend/button_Login")): Object: 'Object Repository/user login/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:58:32 - [MESSAGE][PASSED] - Object: 'Object Repository/user login/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("empty user/Page_ProjectBackend/label_Username"), 0): Object 'Object Repository/empty user/Page_ProjectBackend/label_Username' is present
+
+2019-05-09 09:58:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:58:32 - [MESSAGE][PASSED] - Object 'Object Repository/empty user/Page_ProjectBackend/label_Username' is present
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("empty user/Page_ProjectBackend/label_Username is required"), 0): Object 'Object Repository/empty user/Page_ProjectBackend/label_Username is required' is present
+
+2019-05-09 09:58:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:58:32 - [MESSAGE][PASSED] - Object 'Object Repository/empty user/Page_ProjectBackend/label_Username is required' is present
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - Table = driver.findElement(By.tagName("app-login")): null
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - word = Table.findElements(By.className("text-danger")): null
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - counter = 0: null
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - for ([i = 1, i <= word.size(), (i++)]): null
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - println("No. of warning" + counter): null
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - verifyEqual(2, counter): Actual object '2' and expected object '2' are equal
+
+2019-05-09 09:58:32 - [MESSAGE][PASSED] - Actual object '2' and expected object '2' are equal
+
+2019-05-09 09:58:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-09 09:58:33 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/login fail" classname="Test Cases/login fail" status="PASSED">
+         <system-out><![CDATA[2019-05-09 09:58:33 - [TEST_CASE][PASSED] - Test Cases/login fail: Test Cases/login fail
+
+2019-05-09 09:58:33 - [TEST_STEP][PASSED] - System.setProperty("webdriver.chrome.driver", "C:\chromedriver.exe"): null
+
+2019-05-09 09:58:33 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-09 09:58:33 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-05-09 09:58:36 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-09 09:58:36 - [TEST_STEP][PASSED] - navigateToUrl("http://3.89.142.198:8088/"): Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:58:47 - [MESSAGE][PASSED] - Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:58:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/login fail/Page_ProjectBackend/input_Username_username"), "user"): Text 'user' is set on object 'Object Repository/login fail/Page_ProjectBackend/input_Username_username'
+
+2019-05-09 09:58:48 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/login fail/Page_ProjectBackend/input_Username_username'
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/login fail/Page_ProjectBackend/input_Password_password"), "ser"): Text 'ser' is set on object 'Object Repository/login fail/Page_ProjectBackend/input_Password_password'
+
+2019-05-09 09:58:48 - [MESSAGE][PASSED] - Text 'ser' is set on object 'Object Repository/login fail/Page_ProjectBackend/input_Password_password'
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/login fail/Page_ProjectBackend/button_Login")): Object: 'Object Repository/login fail/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:58:48 - [MESSAGE][PASSED] - Object: 'Object Repository/login fail/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:58:48 - [TEST_STEP][NOT_RUN] - delay(10): NOT_RUN: delay(10)
+
+2019-05-09 09:58:48 - [MESSAGE][NOT_RUN] - NOT_RUN: delay(10)
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect"), 0): Object 'Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect' is present
+
+2019-05-09 09:58:48 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:58:48 - [MESSAGE][PASSED] - Object 'Object Repository/login fail/Page_ProjectBackend/div_Usernamepassword is incorrect' is present
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - Table = driver.findElement(By.tagName("app-login")): null
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - word = Table.findElements(By.className("text-danger")): null
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - counter = 0: null
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - for ([i = 0, i <= word.size(), (i++)]): null
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - println("No. of warning" + counter): null
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - verifyEqual(1, counter): Actual object '1' and expected object '1' are equal
+
+2019-05-09 09:58:48 - [MESSAGE][PASSED] - Actual object '1' and expected object '1' are equal
+
+2019-05-09 09:58:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-09 09:58:48 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/logout" classname="Test Cases/logout" status="PASSED">
+         <system-out><![CDATA[2019-05-09 09:58:48 - [TEST_CASE][PASSED] - Test Cases/logout: Test Cases/logout
+
+2019-05-09 09:58:49 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-05-09 09:58:49 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-05-09 09:58:52 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-05-09 09:58:52 - [TEST_STEP][PASSED] - navigateToUrl("http://3.89.142.198:8088/"): Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:59:09 - [MESSAGE][PASSED] - Navigate to 'http://3.89.142.198:8088/' successfully
+
+2019-05-09 09:59:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/logout/Page_ProjectBackend/input_Username_username"), username_1): Text 'user' is set on object 'Object Repository/logout/Page_ProjectBackend/input_Username_username'
+
+2019-05-09 09:59:09 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/logout/Page_ProjectBackend/input_Username_username'
+
+2019-05-09 09:59:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/logout/Page_ProjectBackend/input_Password_password"), password_1): Text 'user' is set on object 'Object Repository/logout/Page_ProjectBackend/input_Password_password'
+
+2019-05-09 09:59:09 - [MESSAGE][PASSED] - Text 'user' is set on object 'Object Repository/logout/Page_ProjectBackend/input_Password_password'
+
+2019-05-09 09:59:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/logout/Page_ProjectBackend/button_Login")): Object: 'Object Repository/logout/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:59:09 - [MESSAGE][PASSED] - Object: 'Object Repository/logout/Page_ProjectBackend/button_Login' is clicked on
+
+2019-05-09 09:59:09 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-05-09 09:59:19 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-05-09 09:59:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/logout/Page_ProjectBackend/button_Logout")): Object: 'Object Repository/logout/Page_ProjectBackend/button_Logout' is clicked on
+
+2019-05-09 09:59:20 - [MESSAGE][PASSED] - Object: 'Object Repository/logout/Page_ProjectBackend/button_Logout' is clicked on
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/logout/Page_ProjectBackend/h2_Login"), "Login"): Actual text and expected text of test object 'Object Repository/logout/Page_ProjectBackend/h2_Login' are matched.
+
+2019-05-09 09:59:20 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/logout/Page_ProjectBackend/h2_Login' are matched.
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/logout/Page_ProjectBackend/button_Login"), 0): Object 'Object Repository/logout/Page_ProjectBackend/button_Login' is present
+
+2019-05-09 09:59:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-05-09 09:59:20 - [MESSAGE][PASSED] - Object 'Object Repository/logout/Page_ProjectBackend/button_Login' is present
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - Table = driver.findElement(By.tagName("app-login")): null
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - word = Table.findElements(By.className("btn-primary")): null
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - counter = 0: null
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - for ([i = 1, i <= word.size(), (i++)]): null
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - (counter++): null
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - println("No. of button" + counter): null
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - verifyEqual(1, counter): Actual object '1' and expected object '1' are equal
+
+2019-05-09 09:59:20 - [MESSAGE][PASSED] - Actual object '1' and expected object '1' are equal
+
+2019-05-09 09:59:20 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-09 09:59:20 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-05-09 09:56:47 - [TEST_SUITE][PASSED] - Login test: Test Cases/logout]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

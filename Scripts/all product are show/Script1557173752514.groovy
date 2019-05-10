@@ -19,7 +19,7 @@ import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://3.89.142.198:8088/')
+WebUI.navigateToUrl(ip)
 
 WebUI.setText(findTestObject('Object Repository/show product/Page_ProjectBackend/input_Username_username'), username_1)
 
@@ -27,7 +27,7 @@ WebUI.setText(findTestObject('Object Repository/show product/Page_ProjectBackend
 
 WebUI.click(findTestObject('show product/Page_ProjectBackend/button_Login'))
 
-WebUI.delay(10)
+WebUI.delay(3)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/show product/Page_ProjectBackend/img'), 0)
 
@@ -48,34 +48,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/show product/Page_Proj
 WebUI.verifyElementPresent(findTestObject('Object Repository/show product/Page_ProjectBackend/img_4'), 0)
 
 WebUI.verifyElementText(findTestObject('Object Repository/show product/Page_ProjectBackend/h5_Rambutan'), 'Rambutan')
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement Table = driver.findElement(By.tagName('app-product-list'))
-
-List<WebElement> img = Table.findElements(By.className('farmer-image'))
-
-List<WebElement> word = Table.findElements(By.tagName('h5'))
-
-int counterImg = 0
-
-int counterName = 0
-
-for (int i = 1; i <= img.size(); i++) {
-    counterImg++
-}
-
-for (int j = 1; j <= word.size(); j++) {
-    counterName++
-}
-
-println('No. of image ' + counterImg)
-
-println('No. of name ' + counterName)
-
-WebUI.verifyEqual(5, counterImg)
-
-WebUI.verifyEqual(5, counterName)
 
 WebUI.closeBrowser()
 

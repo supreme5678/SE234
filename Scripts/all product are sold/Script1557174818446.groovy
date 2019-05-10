@@ -19,21 +19,21 @@ import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://3.89.142.198:8088/')
+WebUI.navigateToUrl(ip)
 
-WebUI.setText(findTestObject('Object Repository/show cart/Page_ProjectBackend/input_Username_username'), username_1)
+WebUI.setText(findTestObject('show sold/Page_ProjectBackend/input_Username_username'), username_1)
 
-WebUI.setText(findTestObject('Object Repository/show cart/Page_ProjectBackend/input_Password_password'), password_1)
+WebUI.setText(findTestObject('show sold/Page_ProjectBackend/input_Password_password'), password_1)
 
-WebUI.click(findTestObject('Object Repository/show cart/Page_ProjectBackend/button_Login'))
+WebUI.click(findTestObject('show sold/Page_ProjectBackend/button_Login'))
 
-WebUI.delay(10, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/show cart/Page_ProjectBackend/button_add to cart'))
+WebUI.click(findTestObject('show sold/Page_ProjectBackend/button_add to cart'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/show cart/Page_ProjectBackend/div_already added'), 0)
+WebUI.verifyElementText(findTestObject('show sold/Page_ProjectBackend/already added'), 'already added')
 
-WebUI.verifyElementText(findTestObject('Object Repository/show cart/Page_ProjectBackend/span_1'), '1')
+WebUI.verifyElementText(findTestObject('show sold/Page_ProjectBackend/span_1'), '1')
 
 WebUI.closeBrowser()
 

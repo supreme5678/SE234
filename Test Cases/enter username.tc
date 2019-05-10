@@ -12,4 +12,11 @@
       <masked>false</masked>
       <name>username_1</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2b7fc576-c0f8-433f-96e6-07585720464e</id>
+      <masked>false</masked>
+      <name>ip</name>
+   </variable>
 </TestCaseEntity>

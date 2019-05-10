@@ -8,7 +8,7 @@
    <dataFileGUID>e6bb2e1a-327f-4648-b364-2281b99261c8</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>user user</data>
+   <data>user user http%3A%2F%2F3.85.107.71%3A8088%2F</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>username_1</name>
@@ -17,6 +17,11 @@
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>password_1</name>
+      <size>1</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>ip</name>
       <size>1</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>

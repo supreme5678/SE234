@@ -20,7 +20,7 @@ import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://3.89.142.198:8088/')
+WebUI.navigateToUrl(ip)
 
 WebUI.setText(findTestObject('user login/Page_ProjectBackend/input_Username_username'), username_1)
 
@@ -28,27 +28,11 @@ WebUI.setText(findTestObject('user login/Page_ProjectBackend/input_Password_pass
 
 WebUI.click(findTestObject('user login/Page_ProjectBackend/button_Login'))
 
-WebUI.delay(20, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(3)
 
-WebUI.verifyElementPresent(findTestObject('user login/Page_ProjectBackend/a_Products'), 0)
+WebUI.verifyElementText(findTestObject('user login/Page_ProjectBackend/Products'), 'Products')
 
-WebUI.verifyElementPresent(findTestObject('user login/Page_ProjectBackend/a_Carts'), 0)
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-'To locate table'
-WebElement Table = driver.findElement(By.xpath('//*[@id="navbarSupportedContent"]'))
-
-'To locate rows of table it will Capture all the rows available in the table'
-List<WebElement> col = Table.findElements(By.className('nav-item'))
-int counter = 0;
-for (int i = 1; i <= col.size(); i++) {
-	counter++;
-}
-println('No. of columns' + counter)
-'compare the value'
-WebUI.verifyEqual(2, col.size())
-
+WebUI.verifyElementText(findTestObject('user login/Page_ProjectBackend/Carts'), 'Carts')
 
 WebUI.closeBrowser()
 

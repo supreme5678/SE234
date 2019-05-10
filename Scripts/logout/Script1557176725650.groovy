@@ -19,7 +19,7 @@ import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://3.89.142.198:8088/')
+WebUI.navigateToUrl(ip)
 
 WebUI.setText(findTestObject('Object Repository/logout/Page_ProjectBackend/input_Username_username'), username_1)
 
@@ -27,31 +27,13 @@ WebUI.setText(findTestObject('Object Repository/logout/Page_ProjectBackend/input
 
 WebUI.click(findTestObject('Object Repository/logout/Page_ProjectBackend/button_Login'))
 
-WebUI.delay(10)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/logout/Page_ProjectBackend/button_Logout'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/logout/Page_ProjectBackend/h2_Login'), 'Login')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/logout/Page_ProjectBackend/button_Login'), 0)
-
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement Table = driver.findElement(By.tagName('app-login'))
-
-List<WebElement> word = Table.findElements(By.className('btn-primary'))
-
-int counter = 0
-
-for (int i = 1; i <= word.size(); i++) {
-    counter++
-}
-
-println('No. of button' + counter)
-
-WebUI.verifyEqual(1, counter)
-
 
 WebUI.closeBrowser()
 

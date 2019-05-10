@@ -19,15 +19,15 @@ import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://3.89.142.198:8088/')
+WebUI.navigateToUrl(ip)
 
 WebUI.setText(findTestObject('Object Repository/user calculation/Page_ProjectBackend/input_Username_username'), username_1)
 
-WebUI.setText(findTestObject('Object Repository/user calculation/Page_ProjectBackend/input_Password_password'), username_1)
+WebUI.setText(findTestObject('Object Repository/user calculation/Page_ProjectBackend/input_Password_password'), password_1)
 
 WebUI.click(findTestObject('Object Repository/user calculation/Page_ProjectBackend/button_Login'))
 
-WebUI.delay(20)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/user calculation/Page_ProjectBackend/button_add to cart'))
 
@@ -47,25 +47,7 @@ WebUI.click(findTestObject('Object Repository/user calculation/Page_ProjectBacke
 
 WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('user calculation/Page_ProjectBackend/div_successfully_added'), 0)
-
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement Table = driver.findElement(By.xpath('//*[@id="add-row"]'))
-
-List<WebElement> price = Table.findElements(By.tagName('tbody'))
-int counter = 0
-
-for (int i = 1; i <= price.size(); i++) {
-	counter++
-}
-
-println('No. of row ' + counter)
-
-WebUI.verifyEqual(1, counter)
-
-
+WebUI.verifyElementText(findTestObject('user calculation/Page_ProjectBackend/div_successfully_added'), 'Well done!')
 
 WebUI.closeBrowser()
 

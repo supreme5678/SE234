@@ -20,31 +20,15 @@ import org.openqa.selenium.By.ByClassName as ByClassName
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://3.89.142.198:8088/')
+WebUI.navigateToUrl(ip)
 
 WebUI.setText(findTestObject('empty pass/Page_ProjectBackend/input_Username_username'), username_1)
 
 WebUI.click(findTestObject('Object Repository/user login/Page_ProjectBackend/button_Login'))
 
-WebUI.verifyElementPresent(findTestObject('empty pass/Page_ProjectBackend/label_Password'), 0)
+WebUI.verifyElementText(findTestObject('empty pass/Page_ProjectBackend/label_Password'), 'Password')
 
-WebUI.verifyElementPresent(findTestObject('empty pass/Page_ProjectBackend/label_Password is required'), 0)
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement Table = driver.findElement(By.tagName('app-login'))
-
-List<WebElement> word = Table.findElements(By.className('text-danger'))
-
-int counter = 0
-
-for (int i = 1; i <= word.size(); i++) {
-    counter++
-}
-
-println('No. of warning' + counter)
-
-WebUI.verifyEqual(2, counter)
+WebUI.verifyElementText(findTestObject('empty pass/Page_ProjectBackend/label_Password is required'), 'Password is required')
 
 WebUI.closeBrowser()
 

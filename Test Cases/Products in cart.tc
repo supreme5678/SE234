@@ -19,4 +19,11 @@
       <masked>false</masked>
       <name>Password_1</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2576dc17-3f70-4384-b7aa-c2724027bf0c</id>
+      <masked>false</masked>
+      <name>ip</name>
+   </variable>
 </TestCaseEntity>

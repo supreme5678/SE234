@@ -13,3 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(ip)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Login page/h1_SE 234 Project'), 'SE 234 Project')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Login page/label_Username'), 'Username')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Login page/label_Password'), 'Password')
+
+WebUI.closeBrowser()
+

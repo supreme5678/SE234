@@ -21,11 +21,11 @@ System.setProperty('webdriver.chrome.driver', 'C:\\chromedriver.exe')
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://3.82.247.233:8088/')
+WebUI.navigateToUrl(ip)
 
-WebUI.setText(findTestObject('Object Repository/login fail/Page_ProjectBackend/input_Username_username'), 'user')
+WebUI.setText(findTestObject('Object Repository/login fail/Page_ProjectBackend/input_Username_username'), username_fail)
 
-WebUI.setText(findTestObject('Object Repository/login fail/Page_ProjectBackend/input_Password_password'), 'sser')
+WebUI.setText(findTestObject('Object Repository/login fail/Page_ProjectBackend/input_Password_password'), password_fail)
 
 WebUI.click(findTestObject('Object Repository/login fail/Page_ProjectBackend/button_Login'))
 

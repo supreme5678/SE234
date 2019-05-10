@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>b00fd6c8-7046-4fab-bf09-006dcc742c63</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/all product are show</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -36,11 +36,17 @@
          <value>password_1</value>
          <variableId>8e260da3-1f16-4c59-92d0-ce1a04c0e20e</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>3f8ae022-7333-424c-a4d4-283869d573bb</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>265b732f-2861-400a-9402-07dec9cdb5e3</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>cfb32d7d-ba14-4c4e-8274-916e89cab8a5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Products in cart</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -63,11 +69,17 @@
          <value>password_1</value>
          <variableId>27ebf8d5-6dc1-41a0-9548-dbed7e1165a2</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>c368c2dd-bebc-45fb-8919-bc101228e434</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>2576dc17-3f70-4384-b7aa-c2724027bf0c</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>0a8c86d6-974b-4602-b3b9-428a290c959d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/user calculation test</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -89,6 +101,12 @@
          <type>DATA_COLUMN</type>
          <value>password_1</value>
          <variableId>0da92183-4217-4836-99e2-133c12ecef31</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>71240fe3-4189-42ce-ae97-fee4606e0424</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>d09b2b18-35e9-42a2-b36d-db1e9246f9fa</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -116,6 +134,12 @@
          <type>DATA_COLUMN</type>
          <value>password_2</value>
          <variableId>8e1b73d2-390f-49d6-8f34-fc62b1e583a6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2b1d1848-7ec9-4de9-94da-a1f0e5b3b519</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>961e1d47-c098-4835-9cb2-ef67e11fda58</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

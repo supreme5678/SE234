@@ -11,6 +11,27 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>d1f87f3d-1058-4938-bbd3-fd509985ebe0</testSuiteGuid>
    <testCaseLink>
+      <guid>010f27f0-b42b-41f6-81f4-5ba67cb4d75c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login page</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>eec1071f-8c14-4632-87d3-29fa2dc6a17d</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/user</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>eec1071f-8c14-4632-87d3-29fa2dc6a17d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>63c3d767-4a8b-4264-b3bd-759d8dcbfc7a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>c7b0c762-a266-4935-a5c6-be2b88772e2d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -35,6 +56,12 @@
          <type>DATA_COLUMN</type>
          <value>password_1</value>
          <variableId>6bbea531-1800-49bf-8f88-23b365e5f205</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6340d7a6-f7e8-4357-9822-0fb5ebaf0fd9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>12369251-ec78-4dc4-bbe3-4a1edeb71411</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -63,6 +90,12 @@
          <value>password_2</value>
          <variableId>43a47dfe-fd01-4998-a180-98a2b7d81cf8</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>fe147dbd-9234-4e37-9a6e-b7bb5c272cbb</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>b58fda7f-5776-48c0-8225-7b8cc1c0e1c2</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>fa0e5ae3-42ef-4d1d-a04f-9ad66f38c493</guid>
@@ -84,6 +117,12 @@
          <value>username_1</value>
          <variableId>fe6b5c93-1161-4f11-90bc-66dfb201c5b7</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>e23d789b-7e9e-45a6-9ec7-eed0f54da10e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>2b7fc576-c0f8-433f-96e6-07585720464e</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>b41e78bd-a265-4194-b8a0-730c533ccaf5</guid>
@@ -104,6 +143,12 @@
          <type>DATA_COLUMN</type>
          <value>password_1</value>
          <variableId>7891a17d-a2a0-4e76-acc0-1f2bf079dda7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2f4a78cc-6842-4c4d-b33d-36cbdc0ac1a9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>c8ff025a-cf0e-4321-ba2f-850fa74453da</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -132,6 +177,12 @@
          <value>password_fail</value>
          <variableId>2a85f147-04cd-4d77-87f6-cd46a1a66f56</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>37e827e1-6763-47c5-b553-87abe4f0ffc5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>aacddbaf-4f73-46a7-8d99-e63d41a26b65</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>d8de727a-c392-4683-991e-6e4417c49694</guid>
@@ -158,6 +209,12 @@
          <type>DATA_COLUMN</type>
          <value>password_1</value>
          <variableId>7a1957f2-2eea-473c-bb67-7406cc0a2f51</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4a62ea8a-a44d-42bb-afc8-fb467a6a81d5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ip</value>
+         <variableId>55d1677e-b896-4a4d-bce3-cd93d4b6069a</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

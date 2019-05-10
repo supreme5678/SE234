@@ -1,96 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_add to cart</name>
+   <name>td_1500 THB_3</name>
    <tag></tag>
-   <elementGuidId>ab6be3f8-ee4b-4897-adb4-ea598659a009</elementGuidId>
+   <elementGuidId>87571a5d-0873-46ea-93cf-e05e88a09675</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html[1]/body[1]/app-root[1]/app-product-list[1]/div[@class=&quot;dashboard-card&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;farmer-all-card&quot;]/div[@class=&quot;farmer-card&quot;]/a[1]/div[@class=&quot;farmer-detail&quot;]/div[@class=&quot;col text-center&quot;]/button[@class=&quot;btn btn-outline-primary&quot;]</value>
+         <value>//*[@id=&quot;add-row&quot;]/div/table/tbody/tr[5]/td[3]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//div[@id='add-row']/div/table/tbody/tr[3]/td[3]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
+      <value>td</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-outline-primary</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>button</value>
+      <value>text-right</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value> add to cart</value>
+      <value>1,500 THB </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/app-root[1]/app-product-list[1]/div[@class=&quot;dashboard-card&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;farmer-all-card&quot;]/div[@class=&quot;farmer-card&quot;]/a[1]/div[@class=&quot;farmer-detail&quot;]/div[@class=&quot;col text-center&quot;]/button[@class=&quot;btn btn-outline-primary&quot;]</value>
+      <value>//*[@id=&quot;add-row&quot;]/div/table/tbody/tr[5]/td[3]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[2]</value>
+      <value>//div[@id='add-row']/div/table/tbody/tr[3]/td[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Price is 20,000.00 THB'])[1]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Banana'])[1]/following::td[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Garden'])[1]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Banana, Garden, Banana, Rambutan'])[1]/following::td[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Banana'])[1]/preceding::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Banana'])[2]/preceding::td[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Price is 150.00 THB'])[1]/preceding::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Banana'])[3]/preceding::td[5]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>/html/body/app-root/app-product-list/div/div[2]/div/div[1]/a/div[2]/div[2]/button</value>
+      <value>//tr[3]/td[3]</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -19,7 +19,7 @@ import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://3.89.142.198:8088/')
+WebUI.navigateToUrl(ip)
 
 WebUI.setText(findTestObject('Object Repository/cart/input_Username_username'), Username_1)
 
@@ -27,30 +27,13 @@ WebUI.setText(findTestObject('Object Repository/cart/input_Password_password'), 
 
 WebUI.click(findTestObject('Object Repository/cart/button_Login'))
 
-WebUI.delay(10)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/cart/button_add to cart'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/cart/div_already added'), 0)
+WebUI.verifyElementText(findTestObject('cart/already added'), 'already added')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/cart/span_1'), 0)
-
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-WebElement Table = driver.findElement(By.xpath('//*[@id="navbarSupportedContent"]'))
-
-List<WebElement> cart = Table.findElements(By.className('badge-danger'))
-
-int counter = 0
-
-for (int i = 1; i <= cart.size(); i++) {
-	counter++
-}
-
-println('No. in cart ' + counter)
-
-WebUI.verifyEqual(1, counter)
+WebUI.verifyElementText(findTestObject('Object Repository/cart/span_1'), '1')
 
 WebUI.closeBrowser()
 
